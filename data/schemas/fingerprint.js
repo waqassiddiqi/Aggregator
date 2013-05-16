@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'), Schema = mongoose.Schema;
 
 var FingerPrintSchema = new mongoose.Schema({
 	creationDate: { type: Date, default: Date.now },

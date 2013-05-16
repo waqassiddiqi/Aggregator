@@ -37,6 +37,7 @@ var db = require('mongoose').connect(dbURL);
 require('./routes/index')(app);
 require('./routes/users')(app);
 require('./routes/fingerprint')(app);
+require('./routes/place')(app);
 
 app.listen(3000, function() {
 	console.log("Express server listening on port %d in %s mode",
