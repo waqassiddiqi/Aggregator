@@ -12,4 +12,10 @@ module.exports = function(app) {
 			return res.send('OK', 200);
 		});
 	});
+	
+	app.get('/geofence/', function(req, res, next) {
+		Geofence.find().lean().exec(function(err, geofences) {
+			return res.end(JSON.stringify(geofences));
+		});
+	});
 }
