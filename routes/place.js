@@ -11,4 +11,14 @@ module.exports = function(app) {
 			return res.send('OK', 200);
 		});
 	});
+
+        app.get('/place/', function(req, res, next) {
+                console.log(req.body);
+
+                Place.find().lean().exec(function(err, places) { return res.end(JSON.stringify(places)); });
+        });
+
+
+
+
 }
