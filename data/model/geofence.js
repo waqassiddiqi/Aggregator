@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var userSchema = require('../schemas/geofence');
+var GeofenceSchema = require('../schemas/geofence');
 
-var Geofence = mongoose.model('Geofence', userSchema);
+var Geofence = mongoose.model('Geofence', GeofenceSchema);
 
 module.exports = Geofence;
