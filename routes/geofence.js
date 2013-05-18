@@ -1,4 +1,4 @@
-var Geofence = require('../data/model/Geofence');
+var Geofence = require('../data/model/geofence');
 
 module.exports = function(app) {
 	app.post('/geofence/', function(req, res, next) {		

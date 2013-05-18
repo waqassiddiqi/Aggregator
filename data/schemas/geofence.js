@@ -10,7 +10,7 @@ var GeofenceSchema = new mongoose.Schema({
 });
 
 GeofenceSchema.index ({
-    center.geo : '2d'
+    "center.geo" : '2d'
 });
 
 module.exports = GeofenceSchema;
