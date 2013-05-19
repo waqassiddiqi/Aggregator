@@ -34,7 +34,7 @@ var db = require('mongoose').connect(dbURL);
 
 // Routes
 require('./routes/index')(app);
-require('./routes/users')(app);
+require('./routes/user')(app);
 require('./routes/fingerprint')(app);
 require('./routes/place')(app);
 require('./routes/geofence')(app);
